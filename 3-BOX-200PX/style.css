@@ -1,0 +1,38 @@
+/**{
+    margin: 0px;
+    padding: 0px;
+    background-image: ;
+}*/
+/******************************Tag*****************************/
+body{
+    margin: 0;
+}
+h1{
+    margin: 0;
+}
+
+/******************************Class***************************/
+
+.top{
+    background-color: #E4F9F5;
+    width: 200px;
+    height: 200px;
+    border: 10px solid;
+    padding: 20px;
+}
+
+.middle{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border: 20px solid;
+    margin-left: 260px;
+}
+
+.bottom{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    margin-left: 500px;
+    border: 10px solid;
+}
