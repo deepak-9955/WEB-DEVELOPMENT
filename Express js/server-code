@@ -1,1 +1,23 @@
+const { response } = require("express");
+const express = require("express");
 
+const app = express();
+
+
+app.get("/", function(req, res){
+    res.send("Hello world");
+});
+app.get("/index", function(req, res){
+    res.send("This is index page");
+});
+
+app.get("/about", function(req, res){
+    res.send("My name is Deepak kumar. <hr>SKILLS<br>- HTML<br>- CSS<br>- Bootstrap<br>- JavaScript<br>- Node js<br>- Express js<br>- C programming<br>- Java<br>- Python<br>- Video/Photo Editing<br>- Leadership<hr>Post graduation(pursuing)<br>Course :- MCA<br>College :- Galgotias University<br><br>Graduation<br>Course:- B.Sc(Computer Application)<br>College:- Ranchi College, Ranchi<br>Year of Passing Graduating In Aug 2020<br>Score:- 58.83%<br><br>School Class XII<br>Board Name:- BSEB<br>Medium:- English <br>Year of Passing:- 2017<br>Score:- 50.60%<br></br>School Class X <br>Board Name:- ICSE<br>Medium:- English <br>Year of Passing:- 2014<br>Score:- 60%<hr></hr>")
+})
+
+app.get("/contact", function(request, response){
+    response.send("Phone No. :- 9955318900<hr>Email ID :- dee99554@gmail.com")
+})
+app.listen(3000, function(){
+    console.log("Server is unning at port 3000");
+})
